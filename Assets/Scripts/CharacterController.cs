@@ -8,7 +8,7 @@ public class CharacterController : MovingCharacter {
     public int jumpHeight;
 
 
-
+    
 
 
     // Update is called once per frame
@@ -45,7 +45,7 @@ public class CharacterController : MovingCharacter {
             Move(airMovement);
         }
 
-
+        anim.SetFloat("PlayerSpeed", Mathf.Abs(rb.velocity.x));
 
 
     }
@@ -61,8 +61,7 @@ public class CharacterController : MovingCharacter {
 
         rb.velocity = vel;
 
-       // anim.SetBool("InAir", true);
-
+        //anim.SetFloat("PlayerSpeed")
 
     }
 
@@ -98,5 +97,21 @@ public class CharacterController : MovingCharacter {
 
 
         return true;
+    }
+
+
+
+    void OnTriggerEnter2D(Collider2D myCollider)
+    {
+        //when hits spikes
+        if (myCollider.gameObject.GetComponent<BouncingObjectController>() != null)
+        {
+
+            Vector2 bounceJumpBack = rb.velocity;
+            
+            bounceJumpBack.y = (float)(-bounceJumpBack.y * 1.5);
+
+            rb.velocity = bounceJumpBack;
+        }
     }
 }

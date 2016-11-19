@@ -99,4 +99,20 @@ public class CharacterController : MovingCharacter {
 
         return true;
     }
+
+
+
+    void OnTriggerEnter2D(Collider2D myCollider)
+    {
+        //when hits spikes
+        if (myCollider.gameObject.GetComponent<BouncingObjectController>() != null)
+        {
+
+            Vector2 bounceJumpBack = rb.velocity;
+            
+            bounceJumpBack.y = (float)(-bounceJumpBack.y * 1.5);
+
+            rb.velocity = bounceJumpBack;
+        }
+    }
 }

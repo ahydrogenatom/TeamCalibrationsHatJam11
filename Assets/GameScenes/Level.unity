@@ -6490,6 +6490,11 @@ Prefab:
       propertyPath: offsetY
       value: 1.12
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012565355020, guid: 82c4e455630fae8419fcc3517b2c3ede,
+        type: 2}
+      propertyPath: fadeTime
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 82c4e455630fae8419fcc3517b2c3ede, type: 2}
   m_IsPrefabParent: 0

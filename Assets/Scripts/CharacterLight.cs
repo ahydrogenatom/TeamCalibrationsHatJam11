@@ -33,7 +33,7 @@ public class CharacterLight : BaseLight {
             {
                 CharacterController.lightOn = true;
             }
-            var debug = CharacterController.lightOn;
+            
             while (tParam < 1)
             {
                 tParam += Time.deltaTime * fadeTime;

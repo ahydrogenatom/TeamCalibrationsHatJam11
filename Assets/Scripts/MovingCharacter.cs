@@ -10,7 +10,7 @@ public class MovingCharacter : MonoBehaviour {
 
     protected Rigidbody2D rb;
     protected SpriteRenderer sr;
-    //protected Animator anim;
+    protected Animator anim;
     protected BoxCollider2D bc;
 
 
@@ -29,7 +29,7 @@ public class MovingCharacter : MonoBehaviour {
         //assign the private RigidBody component
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
-        //anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
         bc = GetComponent<BoxCollider2D>();
     }
 

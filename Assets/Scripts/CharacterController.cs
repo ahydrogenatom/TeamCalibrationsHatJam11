@@ -9,6 +9,8 @@ public class CharacterController : MovingCharacter {
     public static bool lightOn = true;
     public int jumpHeight;
 
+    public float bounceModifier;
+
 
     
 
@@ -86,21 +88,29 @@ public class CharacterController : MovingCharacter {
         if (hitInfo.collider == null)
         {
             transform.SetParent(null);
+            anim.SetBool("isGrounded", false);
             return false;
         }
 
         //set transform parent to the moving platform if colliding with one
-        if (hitInfo.collider.gameObject.GetComponent<MovingPlatform>() != null)
+        if ((hitInfo.collider.gameObject.GetComponent<MovingPlatform>() != null))
         {
             //change the parent of this unit to the moving platform it is on
             transform.SetParent(hitInfo.collider.transform);
+            anim.SetBool("isGrounded", true);
+            return true;
+        }
+
+        else if((hitInfo.collider.gameObject.GetComponent<Stairs>() != null))
+        {
+            anim.SetBool("isGrounded", true);
         }
         else
         {
             transform.SetParent(null);
         }
 
-
+        anim.SetBool("isGrounded", true);
         return true;
     }
 

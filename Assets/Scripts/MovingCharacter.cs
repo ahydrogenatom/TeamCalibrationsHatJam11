@@ -17,7 +17,7 @@ public class MovingCharacter : MonoBehaviour {
 
 
     protected float raycastDistance = 0.1f;
-    protected float raycastOffset = 0.4f;
+    protected float raycastOffset = 0.3f;
 
 
     protected bool isGrounded;

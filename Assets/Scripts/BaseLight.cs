@@ -3,7 +3,7 @@ using System.Collections;
 
 public class BaseLight : MonoBehaviour {
 
-    public float rayDistance = 1000f;
+    public float rayDistance = 50f;
     public float rayOffset = 0f;
     public Transform greayscalePlane;
     public string lightSource;

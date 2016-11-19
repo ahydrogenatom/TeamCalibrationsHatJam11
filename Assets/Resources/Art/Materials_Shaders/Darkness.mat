@@ -48,7 +48,7 @@ Material:
     - first:
         name: _MainTex
       second:
-        m_Texture: {fileID: 2800000, guid: 3736e6356aa70cd448b76beaaa7033a4, type: 3}
+        m_Texture: {fileID: 10305, guid: 0000000000000000f000000000000000, type: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -111,7 +111,7 @@ Material:
       second: 1
     - first:
         name: _MaxTransparancy
-      second: 72.52
+      second: 129.8
     - first:
         name: _Metallic
       second: 0
@@ -123,7 +123,7 @@ Material:
       second: 1
     - first:
         name: _OverallTransparancy
-      second: 10.56
+      second: 4.3
     - first:
         name: _Parallax
       second: 0.02
@@ -154,7 +154,7 @@ Material:
       second: {r: 0, g: 0, b: 0, a: 1}
     - first:
         name: _Light_1_Pos
-      second: {r: 8.91, g: -2.72, b: 0, a: 1}
+      second: {r: 0, g: 0, b: 0, a: 1}
     - first:
         name: _Light_2_Pos
       second: {r: 500, g: 0, b: 0, a: 1}
@@ -169,4 +169,4 @@ Material:
       second: {r: 0, g: 0, b: 0, a: 1}
     - first:
         name: _Transparent
-      second: {r: 0, g: 0, b: 0, a: 1}
+      second: {r: -14.49, g: 0, b: 0, a: 1}

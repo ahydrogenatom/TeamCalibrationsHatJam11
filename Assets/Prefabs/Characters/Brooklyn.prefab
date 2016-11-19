@@ -23,7 +23,7 @@ GameObject:
   - 50: {fileID: 50000013043416620}
   - 61: {fileID: 61000013201223440}
   - 114: {fileID: 114000010877352486}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Brooklyn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011690878362}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -29.01, y: 6.51, z: 0}
+  m_LocalPosition: {x: 8.490142, y: -2.5531828, z: 0}
   m_LocalScale: {x: 0.72561795, y: 0.72561795, z: 0.72561795}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []

@@ -1,10 +1,12 @@
 fileFormatVersion: 2
 guid: 9282b7c57a22c924cb573c77b32cd76a
-timeCreated: 1479531296
+timeCreated: 1479539581
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - greayscalePlane: {fileID: 4000013842676420, guid: dbe10fa6d724d344f9e310b1b60cf639,
+      type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

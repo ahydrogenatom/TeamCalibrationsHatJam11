@@ -9,7 +9,6 @@ public class BaseLight : MonoBehaviour {
     protected float raycastDistance = 0.1f;
     protected float raycastOffset = 0.4f;
     public Transform greayscalePlane;
-    public float speed;
 
 
     // Use this for initialization
@@ -19,6 +18,11 @@ public class BaseLight : MonoBehaviour {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
        anim = GetComponent<Animator>();
+    }
+
+    void update()
+    {
+        GreyScale(raycastOffset);
     }
 
     protected void GreyScale(float offsetX)

@@ -5,6 +5,8 @@ public class CharacterController : MovingCharacter {
 
 
     private bool isCaught;
+    [HideInInspector]
+    public static bool lightOn = true;
     public int jumpHeight;
 
     public float bounceModifier;
@@ -48,6 +50,8 @@ public class CharacterController : MovingCharacter {
 
 
         }
+
+       
 
         anim.SetFloat("PlayerSpeed", Mathf.Abs(rb.velocity.x));
 		anim.SetFloat ("Vertical speed", rb.velocity.y);

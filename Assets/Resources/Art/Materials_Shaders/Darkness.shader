@@ -6,12 +6,15 @@ Shader "Darkness" {
 	_EffectAmount("Effect Amount", Range(0, 1)) = 1.0
 		_ColourRadius("ColourRadius", Float) = 1.0
 		_ColourMaxRadius("ColourMaxRadius", Float) = 1.0
+		_OverallTransparancy("OverallTransparancy", Float) = 1.0
+		_MaxTransparancy("MaxTransparancy", Float) = 1.0
 		_ColourR("ColourR", Float) = 0.3
 		_ColourG("ColourG", Float) = 0.59
 		_ColourB("ColourB", Float) = 0.11
 		_Light_1_Pos("Light_1_Pos", Vector) = (0,0,0,1)
 		_Light_2_Pos("Light_2_Pos", Vector) = (0,0,0,1)
 		_Light_3_Pos("Light_3_Pos", Vector) = (0,0,0,1)
+		_Transparent("Transparent", Vector) = (0,0,0,1)
 
 	}
 		SubShader{
@@ -27,9 +30,12 @@ Shader "Darkness" {
 	uniform float _EffectAmount;
 	float _ColourRadius;
 	float _ColourMaxRadius;
+	float _MaxTransparancy;
+	float _OverallTransparancy;
 	float4 _Light_1_Pos;
 	float4 _Light_2_Pos;
 	float4 _Light_3_Pos;
+	float4 _Transparent;
 	float _ColourR;
 	float _ColourG;
 	float _ColourB;
@@ -49,6 +55,7 @@ Shader "Darkness" {
 
 
 	float powerForPos(float4 pos, float2 nearVertex);
+	float areaTransparancy(float4 pos, float2 nearVertex);
 
 
 	void vert(inout appdata_full vertexData, out Input outData)
@@ -66,17 +73,22 @@ Shader "Darkness" {
 		fixed4 baseColour = tex2D(_MainTex, IN.uv_MainTex);
 
 
-		float alpha = (1.0 - (powerForPos(_Light_1_Pos, IN.location) + powerForPos(_Light_2_Pos, IN.location) + powerForPos(_Light_3_Pos, IN.location)));
+		float alpha = (1.0 - (powerForPos(_Light_1_Pos, IN.location) + powerForPos(_Light_2_Pos, IN.location) + powerForPos(_Light_3_Pos, IN.location) + areaTransparancy(_Transparent, IN.location)));
 
 		o.Albedo = lerp(baseColour.rgb, dot(baseColour.rgb, float3(_ColourR, _ColourG, _ColourB)), _EffectAmount);
 		o.Alpha = alpha;
 	}
 
-	//return 0 if pos - nearVertex >_ColourRadius
 	float powerForPos(float4 pos, float2 nearVertex)
 	{
 		float atten = clamp(_ColourRadius - length(pos.xy - nearVertex.xy), 0.0, _ColourRadius);
 		return (1.0 / _ColourMaxRadius)*atten / _ColourRadius;
+	}
+
+	float areaTransparancy(float4 pos, float2 nearVertex)
+	{
+		float atten = clamp(_MaxTransparancy - length(pos.xy - nearVertex.xy), 0.0, _MaxTransparancy);
+		return (1.0 / _OverallTransparancy)*atten / _MaxTransparancy;
 	}
 
 	ENDCG

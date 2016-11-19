@@ -7,9 +7,13 @@ public class CharacterController : MovingCharacter {
     private bool isCaught;
     public int jumpHeight;
 
-	
-	// Update is called once per frame
-	void Update () {
+
+    public Transform greayscalePlane;
+
+
+
+    // Update is called once per frame
+    void Update () {
 
         //move horizontally
         float horizontalInput = Input.GetAxisRaw("Horizontal");
@@ -21,8 +25,6 @@ public class CharacterController : MovingCharacter {
             Jump();
         }
 
-        
-	
 	}
 
     //Jump method

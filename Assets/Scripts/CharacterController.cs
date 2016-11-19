@@ -32,7 +32,7 @@ public class CharacterController : MovingCharacter {
 
         vel.y = jumpHeight;
 
-        vel.x = (float)(vel.x * 1.2);
+        //vel.x = (float)(vel.x * 1.2);
 
         rb.velocity = vel;
 

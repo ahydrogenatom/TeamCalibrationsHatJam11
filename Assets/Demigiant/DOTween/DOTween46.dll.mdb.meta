@@ -1,6 +1,16 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 9bb2993f9858652488df056ea67322fc
 timeCreated: 1479556582
+=======
+<<<<<<< HEAD:Assets/Demigiant/DOTween/DOTween46.dll.mdb.meta
+guid: a7b08d7f3e64b3642bf34d0a44b80463
+timeCreated: 1479557290
+=======
+guid: f98d518e1a17a8e41b34ab0ef0c71062
+timeCreated: 1479557492
+>>>>>>> 6c4cca99b21545b1ffb9e7ae213376704ca69a6b:Assets/Demigiant/DOTween/DOTween46.dll.mdb.meta
+>>>>>>> 1db0ebf06ed66517d6a474ef7594bb5cd283d27b
 licenseType: Free
 DefaultImporter:
   userData: 

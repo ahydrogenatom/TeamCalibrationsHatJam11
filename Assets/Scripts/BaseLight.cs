@@ -3,25 +3,18 @@ using System.Collections;
 
 public class BaseLight : MonoBehaviour {
 
-    public float rayDistance = 50f;
-    public float rayOffset = 0f;
-    public Transform greayscalePlane;
+    public float offsetY = 0f;
+    public Transform darknessplane;
     public string lightSource;
+    public Transform target;
 
 
-  void update()
+
+    public void GreyScale(float offsetY)
     {
-        GreyScale(rayOffset);
-    }
+        Vector3 origin = new Vector3(0, offsetY, 0);
+        origin += target.position;
 
-    public void GreyScale(float offsetX)
-    {
-        Vector3 origin = transform.position;
-        origin.x += offsetX;
-        //create a line that shoots down from the feet of the unit, if there was no colider under our unit return false else return true
-        RaycastHit2D hitInfo = Physics2D.Raycast(origin, new Vector2(0, -1), rayDistance);
-        //this will draw a line in our screen simiar to the raycast
-        Debug.DrawRay(origin, new Vector2(0, -rayDistance)); 
-        greayscalePlane.GetComponent<Renderer>().material.SetVector(lightSource, hitInfo.point);
+        darknessplane.GetComponent<Renderer>().material.SetVector(lightSource, origin);
     }
 }

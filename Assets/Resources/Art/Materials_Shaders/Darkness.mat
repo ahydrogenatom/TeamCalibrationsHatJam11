@@ -48,7 +48,7 @@ Material:
     - first:
         name: _MainTex
       second:
-        m_Texture: {fileID: 2800000, guid: 8f0e73743858d604e86c7172c5207ff9, type: 3}
+        m_Texture: {fileID: 2800000, guid: 3736e6356aa70cd448b76beaaa7033a4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -75,19 +75,19 @@ Material:
       second: 1
     - first:
         name: _ColourB
-      second: 0.11
+      second: -0.37
     - first:
         name: _ColourG
-      second: 0.59
+      second: 0.58
     - first:
         name: _ColourMaxRadius
-      second: 0.1
+      second: 0.95
     - first:
         name: _ColourR
-      second: 0.3
+      second: 1.1
     - first:
         name: _ColourRadius
-      second: 1.52
+      second: 2.19
     - first:
         name: _Cutoff
       second: 0.5
@@ -110,6 +110,9 @@ Material:
         name: _GlossyReflections
       second: 1
     - first:
+        name: _MaxTransparancy
+      second: 72.52
+    - first:
         name: _Metallic
       second: 0
     - first:
@@ -118,6 +121,9 @@ Material:
     - first:
         name: _OcclusionStrength
       second: 1
+    - first:
+        name: _OverallTransparancy
+      second: 10.56
     - first:
         name: _Parallax
       second: 0.02
@@ -148,16 +154,19 @@ Material:
       second: {r: 0, g: 0, b: 0, a: 1}
     - first:
         name: _Light_1_Pos
-      second: {r: 0, g: 0, b: 0, a: 1}
+      second: {r: 8.91, g: -2.72, b: 0, a: 1}
     - first:
         name: _Light_2_Pos
-      second: {r: 0, g: 0, b: 0, a: 1}
+      second: {r: 500, g: 0, b: 0, a: 1}
     - first:
         name: _Light_3_Pos
-      second: {r: 0, g: 0, b: 0, a: 1}
+      second: {r: 500, g: 0, b: 0, a: 1}
     - first:
         name: _PlayerPos
       second: {r: 0, g: 0, b: 0, a: 1}
     - first:
         name: _Player_Pos
+      second: {r: 0, g: 0, b: 0, a: 1}
+    - first:
+        name: _Transparent
       second: {r: 0, g: 0, b: 0, a: 1}

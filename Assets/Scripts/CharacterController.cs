@@ -7,9 +7,12 @@ public class CharacterController : MovingCharacter {
     private bool isCaught;
     public int jumpHeight;
 
-	
-	// Update is called once per frame
-	void Update () {
+
+
+
+
+    // Update is called once per frame
+    void Update () {
 
 
         //check to see if character is grounded
@@ -34,8 +37,7 @@ public class CharacterController : MovingCharacter {
                 Jump();
             }
         }
-
-        //in the air
+          //in the air
         if (isGrounded == false)
         {
 

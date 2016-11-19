@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GreyScale : MonoBehaviour {
+public class Darkness : MonoBehaviour {
 
     public Transform greayscalePlane;
 

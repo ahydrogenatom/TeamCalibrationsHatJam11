@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BaseUnits : MonoBehaviour {
+public class BaseLight : MonoBehaviour {
 
     protected Rigidbody2D rb;
     protected SpriteRenderer sr;
@@ -19,30 +19,6 @@ public class BaseUnits : MonoBehaviour {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
        anim = GetComponent<Animator>();
-    }
-
-    protected void Move(float horizontalInput, float verticalInput)
-    {
-        //set the velocity to a vertor and then applys the velocity and then apply the actual velocity to the rb
-        Vector2 vel = rb.velocity;
-        vel.x = horizontalInput * speed;
-        vel.y = verticalInput * speed;
-        rb.velocity = vel;
-
-        if (horizontalInput < 0)
-        {
-            sr.flipX = true;
-        }
-        if (horizontalInput > 0)
-        {
-            sr.flipX = false;
-        }
-
-        //set the animator input of speed to the velocity input of inout
-        //animator will handle transition from idel to run
-        //send the absolute vvalue of input so when we run left it still plays the animation
-        //anim.SetFloat("SpeedHorizontal", Mathf.Abs(horizontalInput));
-      //  anim.SetFloat("SpeedVertical", Mathf.Abs(verticalInput));
     }
 
     protected void GreyScale(float offsetX)

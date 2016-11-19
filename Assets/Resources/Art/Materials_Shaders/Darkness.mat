@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: GreyScale
-  m_Shader: {fileID: 4800000, guid: 28dd8c1b6391b524d99f76d8333aa01a, type: 3}
+  m_Name: Darkness
+  m_Shader: {fileID: 4800000, guid: 4c2d9ec33815e7244bf777e8db174296, type: 3}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
   m_CustomRenderQueue: -1
@@ -48,7 +48,7 @@ Material:
     - first:
         name: _MainTex
       second:
-        m_Texture: {fileID: 2800000, guid: ab61d065badb1964f92f8a8bc22a5d36, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8f0e73743858d604e86c7172c5207ff9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -74,11 +74,20 @@ Material:
         name: _BumpScale
       second: 1
     - first:
+        name: _ColourB
+      second: 0.11
+    - first:
+        name: _ColourG
+      second: 0.59
+    - first:
         name: _ColourMaxRadius
-      second: 0.32
+      second: 0.1
+    - first:
+        name: _ColourR
+      second: 0.3
     - first:
         name: _ColourRadius
-      second: 13.56
+      second: 1.52
     - first:
         name: _Cutoff
       second: 0.5
@@ -132,7 +141,19 @@ Material:
         name: _Color
       second: {r: 1, g: 1, b: 1, a: 0}
     - first:
+        name: _Colour
+      second: {r: 0.5147059, g: 0.20815313, b: 0.20815313, a: 0}
+    - first:
         name: _EmissionColor
+      second: {r: 0, g: 0, b: 0, a: 1}
+    - first:
+        name: _Light_1_Pos
+      second: {r: 0, g: 0, b: 0, a: 1}
+    - first:
+        name: _Light_2_Pos
+      second: {r: 0, g: 0, b: 0, a: 1}
+    - first:
+        name: _Light_3_Pos
       second: {r: 0, g: 0, b: 0, a: 1}
     - first:
         name: _PlayerPos

@@ -1194,6 +1194,23 @@ Transform:
   - {fileID: 880937322}
   m_Father: {fileID: 1035117736}
   m_RootOrder: 14
+--- !u!1 &518341462 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000013912570122, guid: f6a8291c2cf16f64d9d5d597ca211ce2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1948240732}
+--- !u!114 &518341465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 518341462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a08b9762b7b11a24b929b5cb5e3b155a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveDuration: 3
 --- !u!4 &590656420 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000012740559162, guid: d052b3619bcf8274c8a5e66d53fb8946,
@@ -3879,7 +3896,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 1
+  orthographic: 0
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:

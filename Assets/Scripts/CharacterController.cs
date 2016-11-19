@@ -43,10 +43,12 @@ public class CharacterController : MovingCharacter {
 
             float airMovement = (float)(horizontalInput * 0.8);
             Move(airMovement);
+
+
         }
 
         anim.SetFloat("PlayerSpeed", Mathf.Abs(rb.velocity.x));
-
+		anim.SetFloat ("Vertical speed", rb.velocity.y);
 
     }
 
@@ -60,8 +62,7 @@ public class CharacterController : MovingCharacter {
         vel.x = (float)(vel.x * 1.2);
 
         rb.velocity = vel;
-
-        //anim.SetFloat("PlayerSpeed")
+	
 
     }
 

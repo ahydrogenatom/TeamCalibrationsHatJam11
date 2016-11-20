@@ -1650,6 +1650,20 @@ Prefab:
       propertyPath: sanityGrowthThreshold
       value: 0.35
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010877352486, guid: 273762fdf2dea394f9bb5e1717279f61,
+        type: 2}
+      propertyPath: scaryFace
+      value: 
+      objectReference: {fileID: 966904185}
+    - target: {fileID: 1000011690878362, guid: 273762fdf2dea394f9bb5e1717279f61, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010877352486, guid: 273762fdf2dea394f9bb5e1717279f61,
+        type: 2}
+      propertyPath: mask.m_Bits
+      value: 4294967039
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 273762fdf2dea394f9bb5e1717279f61, type: 2}
   m_IsPrefabParent: 0
@@ -4578,6 +4592,12 @@ Transform:
   - {fileID: 1382280826}
   m_Father: {fileID: 0}
   m_RootOrder: 67
+--- !u!114 &966904185 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000012563059042, guid: 7b601c2e85dda3549b2353e330d03294,
+    type: 2}
+  m_PrefabInternal: {fileID: 1554804390}
+  m_Script: {fileID: 11500000, guid: 84f998d88ef59ad4699cf92ab99d1d90, type: 3}
 --- !u!1 &974045145
 GameObject:
   m_ObjectHideFlags: 0
@@ -5521,6 +5541,11 @@ Prefab:
       propertyPath: m_Name
       value: Clown (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012096196784, guid: c7cc5162ec35d324790b6543f2a5892d,
+        type: 2}
+      propertyPath: scaryFace
+      value: 
+      objectReference: {fileID: 966904185}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c7cc5162ec35d324790b6543f2a5892d, type: 2}
   m_IsPrefabParent: 0
@@ -6053,7 +6078,7 @@ Prefab:
     - target: {fileID: 212000010299774978, guid: 40187e33683a484409192e1342f53730,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1000010090606198, guid: 40187e33683a484409192e1342f53730, type: 2}
       propertyPath: m_IsActive
@@ -7685,8 +7710,13 @@ Prefab:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1000011379220560, guid: 7b601c2e85dda3549b2353e330d03294, type: 2}
-      propertyPath: m_IsActive
-      value: 0
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 212000013941754114, guid: 7b601c2e85dda3549b2353e330d03294,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7b601c2e85dda3549b2353e330d03294, type: 2}
@@ -7977,6 +8007,11 @@ Prefab:
       propertyPath: m_Name
       value: Clown (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012096196784, guid: c7cc5162ec35d324790b6543f2a5892d,
+        type: 2}
+      propertyPath: scaryFace
+      value: 
+      objectReference: {fileID: 966904185}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c7cc5162ec35d324790b6543f2a5892d, type: 2}
   m_IsPrefabParent: 0
@@ -9333,7 +9368,7 @@ GameObject:
   - 92: {fileID: 1836041482}
   - 124: {fileID: 1836041481}
   - 81: {fileID: 1836041480}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -10380,6 +10415,11 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012096196784, guid: c7cc5162ec35d324790b6543f2a5892d,
+        type: 2}
+      propertyPath: scaryFace
+      value: 
+      objectReference: {fileID: 966904185}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c7cc5162ec35d324790b6543f2a5892d, type: 2}
   m_IsPrefabParent: 0

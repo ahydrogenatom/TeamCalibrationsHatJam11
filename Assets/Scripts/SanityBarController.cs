@@ -20,6 +20,6 @@ public class SanityBarController : MonoBehaviour {
         double sanityBarValue = CharacterController.getSanity();
         sanityBarValue = sanityBarValue / 100;
         sanityBar.value = (float) sanityBarValue;
-        print(sanityBarValue);
+        
 	}
 }

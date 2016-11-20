@@ -9,7 +9,7 @@ public class MovingCharacter : MonoBehaviour {
     protected Random rand;
     public float randMin;
     public float randMax;
-
+    public LayerMask mask;
 
     protected Rigidbody2D rb;
     protected SpriteRenderer sr;
@@ -34,8 +34,9 @@ public class MovingCharacter : MonoBehaviour {
         anim = GetComponent<Animator>();
         bc = GetComponent<BoxCollider2D>();
         rand = new Random();
-
+        CharacterController.lightOn = true;
         CharacterController.currentSanity = 100;
+        CharacterController.isCaught = false;
     }
 
     protected void Move(float input)
@@ -71,7 +72,7 @@ public class MovingCharacter : MonoBehaviour {
         Vector3 origin = transform.position;
         origin.x += offsetX;
         //create a downwards-facing raycast at the character's feet
-        RaycastHit2D hitInfo = Physics2D.Raycast(origin, new Vector2(0, -1), raycastDistance);
+        RaycastHit2D hitInfo = Physics2D.Raycast(origin, new Vector2(0, -1), raycastDistance,mask);
 
         //draws a line on screen to visually see what the raycast is doing
         Debug.DrawRay(origin, new Vector2(0, -raycastDistance));

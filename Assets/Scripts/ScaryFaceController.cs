@@ -36,10 +36,12 @@ public class ScaryFaceController : MonoBehaviour {
             zPos -= 0.1f;
         }
 
-        if(zPos <= 0)
+        if(zPos <= -15)
         {
             SceneManager.LoadScene("Level");
         }
+
+        print(zPos);
 
     }
 

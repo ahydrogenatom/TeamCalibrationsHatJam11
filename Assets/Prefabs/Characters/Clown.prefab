@@ -24,7 +24,7 @@ GameObject:
   - 50: {fileID: 50000011212491306}
   - 95: {fileID: 95000013338869744}
   - 114: {fileID: 114000012096196784}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Clown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,12 @@ MonoBehaviour:
   lightRange: 0
   randMin: 0.5
   randMax: 2
+  mask:
+    serializedVersion: 2
+    m_Bits: 0
   walkTimer: 5
+  scaryFace: {fileID: 114000012563059042, guid: 7b601c2e85dda3549b2353e330d03294,
+    type: 2}
 --- !u!212 &212000012914831558
 SpriteRenderer:
   m_ObjectHideFlags: 1

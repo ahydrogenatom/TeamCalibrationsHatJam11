@@ -9,7 +9,10 @@ public class BaseLight : MonoBehaviour {
     public string lightSource;
     public Transform target;
 
-
+    public void start()
+    {
+        CharacterController.lightOn = true;
+    }
 
     public void GreyScale(float offsetY)
     {

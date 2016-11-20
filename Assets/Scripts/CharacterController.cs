@@ -8,7 +8,7 @@ public class CharacterController : MovingCharacter {
 
     public static bool isCaught;
     [HideInInspector]
-    public static bool lightOn = true;
+    public static bool lightOn;
     public int jumpHeight;
 
     public float bounceModifier;

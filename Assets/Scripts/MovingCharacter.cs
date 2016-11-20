@@ -6,6 +6,7 @@ public class MovingCharacter : MonoBehaviour {
     public int moveSpeed;
     public int lightRange;
 
+    protected Random rand;
     public float randMin;
     public float randMax;
 
@@ -32,6 +33,9 @@ public class MovingCharacter : MonoBehaviour {
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
         bc = GetComponent<BoxCollider2D>();
+        rand = new Random();
+
+        CharacterController.currentSanity = 100;
     }
 
     protected void Move(float input)
@@ -105,5 +109,5 @@ public class MovingCharacter : MonoBehaviour {
     protected float GetRandom()
    {
         return Random.Range(randMin, randMax);
-   }
+    }
 }

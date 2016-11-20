@@ -16,12 +16,15 @@ public class ClownAI : MovingCharacter {
     private float direction = 1;
     private float idle = 0;
 
+    
+
     private double movementSwitchtimer;
 
     private double lightTimer = 5;
     private double currenttimer;
     private double lastTimer;
 
+    public GameObject scaryFace;
 
 	// Update is called once per frame
 	void Update () {
@@ -57,6 +60,7 @@ public class ClownAI : MovingCharacter {
             {
                 greenLight = false;
                 lightTimer *= GetRandom();
+                
             }
             else
             {
@@ -104,8 +108,8 @@ public class ClownAI : MovingCharacter {
             //       yield return null;
             //   }
 
-            //ScaryFaceController.setVisable();
-            //ScaryFaceController.eatScreen();
+          //  scaryFace.setVisible();
+          //  scaryFace.eatScreen();
         }
 
     }

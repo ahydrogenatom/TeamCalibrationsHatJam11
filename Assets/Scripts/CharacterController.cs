@@ -4,6 +4,8 @@ using System.Collections;
 public class CharacterController : MovingCharacter {
 
 
+    public ScaryFaceController scaryFace;
+
     public static bool isCaught;
     [HideInInspector]
     public static bool lightOn = true;
@@ -153,6 +155,14 @@ public class CharacterController : MovingCharacter {
         }
         anim.SetFloat("PlayerSpeed", Mathf.Abs(rb.velocity.x));
 		anim.SetFloat ("Vertical speed", rb.velocity.y);
+
+
+        if(currentSanity <= 1)
+        {
+            isCaught = true;
+            scaryFace.setVisible(true);
+            scaryFace.eatScreen();
+        }
         
     }
 

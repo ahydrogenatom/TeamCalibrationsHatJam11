@@ -7,9 +7,12 @@ public class ScaryFaceController : MonoBehaviour {
     float zPos;
     Vector3 cameraPosition;
     SpriteRenderer sr;
+
+    bool isEatingScreen;
 	// Use this for initialization
 	void Start () {
 
+        isEatingScreen = false;
         sr = GetComponent<SpriteRenderer>();
         //set position of face to camera
         cameraPosition = new Vector3 (transform.parent.transform.position.x, transform.parent.transform.position.y);
@@ -18,17 +21,25 @@ public class ScaryFaceController : MonoBehaviour {
 
         zPos = 10;
 
-        setVisible(true);
+        setVisible(false);
 	
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-        Vector3 newPos = new Vector3(transform.position.x, transform.position.y, zPos);
-        transform.position = newPos;
+        if(isEatingScreen == true)
+        {
+            Vector3 newPos = new Vector3(transform.position.x, transform.position.y, zPos);
+            transform.position = newPos;
 
-        zPos -= 0.1f;
+            zPos -= 0.1f;
+        }
+
+        if(zPos <= 0)
+        {
+            SceneManager.LoadScene("Level");
+        }
 
     }
 
@@ -41,14 +52,7 @@ public class ScaryFaceController : MonoBehaviour {
 
     public void eatScreen()
     {
-        while(zPos > 0)
-        {
-            Vector3 newPos = new Vector3(transform.position.x, transform.position.y, zPos);
-            transform.position = newPos;
-
-            zPos -= 0.1f;
-        }
-
-        SceneManager.LoadScene("Level");
+        isEatingScreen = true;
+        
     }
 }

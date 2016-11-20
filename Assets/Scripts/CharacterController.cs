@@ -156,8 +156,7 @@ public class CharacterController : MovingCharacter {
 	
 
     }
-
-<<<<<<< HEAD
+    
     //check to see if there is a collision object immediately under the character
     //return true if the character is standing on a collision object
     protected bool CheckIsGrounded(float offsetX)
@@ -200,9 +199,7 @@ public class CharacterController : MovingCharacter {
         anim.SetBool("isGrounded", true);
         return true;
     }
-
-=======
->>>>>>> dbfd1aade6f03c0eb1fad03862b387b19c1be947
+    
 
 
     void OnTriggerEnter2D(Collider2D myCollider)

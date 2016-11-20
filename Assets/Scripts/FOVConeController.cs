@@ -16,7 +16,7 @@ public class FOVConeController : MonoBehaviour {
 
         clownPos = transform.parent.transform.position;
         sr = GetComponent<SpriteRenderer>();
-        isActive = !ClownAI.greenLight;
+        isActive = !GreenLightManager.getLight();
         
 	}
 	
@@ -33,12 +33,12 @@ public class FOVConeController : MonoBehaviour {
         
 
 
-        if (ClownAI.greenLight == true)
+        if (GreenLightManager.getLight() == true)
         {
             setVisible(false);
         }
 
-        if(ClownAI.greenLight == false)
+        if(GreenLightManager.getLight() == false)
         {
             setVisible(true);
         }

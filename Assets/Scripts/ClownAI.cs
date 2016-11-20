@@ -3,8 +3,6 @@ using System.Collections;
 
 public class ClownAI : MovingCharacter {
 
-    public static bool greenLight = true;
-
     public double walkTimer;
 
     protected float maxRayDistance = 1000;
@@ -27,17 +25,19 @@ public class ClownAI : MovingCharacter {
     public ScaryFaceController scaryFace;
     public FOVConeController visionCone;
 
-	// Update is called once per frame
-	void Update () {
+    // Update is called once per frame
+    void Update()
+    {
+        print(currentWalkTime);
 
-        if (greenLight == true)
+        if (GreenLightManager.getLight() == true)
         {
-            anim.SetBool("GreenLight", greenLight);
+            anim.SetBool("GreenLight", GreenLightManager.getLight());
             Move(idle);
         }
-        if (greenLight == false)
+        if (GreenLightManager.getLight() == false)
         {
-            anim.SetBool("GreenLight", greenLight);
+            anim.SetBool("GreenLight", GreenLightManager.getLight());
             Move(direction);
             currentWalkTime = Time.time - lastWalkTime;
             if (currentWalkTime > walkTimer)
@@ -57,16 +57,15 @@ public class ClownAI : MovingCharacter {
         currenttimer = Time.time - lastTimer;
         if (currenttimer > lightTime)
         {
-            if(greenLight == true)
+            if (GreenLightManager.getLight() == true)
             {
-                greenLight = false;
                 walkTimer *= GetRandom();
-                
+                print("A");
             }
             else
-            {
-                greenLight = true;
+            {                
                 walkTimer = 10;
+                print("B");
             }
 
             lastTimer = Time.time;
@@ -75,7 +74,7 @@ public class ClownAI : MovingCharacter {
 
     void OnTriggerEnter2D(Collider2D objectColided)
     {
-        if(greenLight == false && objectColided.gameObject.GetComponent<CharacterController>() != null)
+        if(GreenLightManager.getLight() == false && objectColided.gameObject.GetComponent<CharacterController>() != null)
         {
             if(CharacterController.lightOn == true && CharacterController.isCaught == false)
             {
@@ -106,11 +105,6 @@ public class ClownAI : MovingCharacter {
                 Move(moveSpeed);
             }
             Move(0);
-            //play grab animation
-            //   while (AnimationState.time >= AnimationState.length)
-            //   {
-            //       yield return null;
-            //   }
 
          
         }

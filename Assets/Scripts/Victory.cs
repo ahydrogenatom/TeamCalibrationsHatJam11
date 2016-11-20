@@ -8,7 +8,8 @@ public class Victory : MonoBehaviour {
        if(otherCollied.gameObject.GetComponent<CharacterController>() != null)
         {
             var player = otherCollied.gameObject.GetComponent<CharacterController>();
-            
+            CharacterController.isCaught = true;
+            player.winGame();
         }
 
     }

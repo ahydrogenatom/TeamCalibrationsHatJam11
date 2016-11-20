@@ -6,6 +6,8 @@ Shader "Darkness" {
 	_EffectAmount("Effect Amount", Range(0, 1)) = 1.0
 		_ColourRadius("ColourRadius", Float) = 1.0
 		_ColourMaxRadius("ColourMaxRadius", Float) = 1.0
+		_PColourRadius("PlayerColourRadius", Float) = 1.0
+		_PColourMaxRadius("PlayerColourMaxRadius", Float) = 1.0
 		_OverallTransparancy("OverallTransparancy", Float) = 1.0
 		_MaxTransparancy("MaxTransparancy", Float) = 1.0
 		_ColourR("ColourR", Float) = 0.3
@@ -30,6 +32,8 @@ Shader "Darkness" {
 	uniform float _EffectAmount;
 	float _ColourRadius;
 	float _ColourMaxRadius;
+	float _PColourRadius;
+	float _PColourMaxRadius;
 	float _MaxTransparancy;
 	float _OverallTransparancy;
 	float4 _Light_1_Pos;
@@ -56,6 +60,7 @@ Shader "Darkness" {
 
 	float powerForPos(float4 pos, float2 nearVertex);
 	float areaTransparancy(float4 pos, float2 nearVertex);
+	float playerPos(float4 pos, float2 nearVertex);
 
 
 	void vert(inout appdata_full vertexData, out Input outData)
@@ -73,7 +78,7 @@ Shader "Darkness" {
 		fixed4 baseColour = tex2D(_MainTex, IN.uv_MainTex);
 
 
-		float alpha = (1.0 - (powerForPos(_Light_1_Pos, IN.location) + powerForPos(_Light_2_Pos, IN.location) + powerForPos(_Light_3_Pos, IN.location) + areaTransparancy(_Transparent, IN.location)));
+		float alpha = (1.0 - (playerPos(_Light_1_Pos, IN.location) + powerForPos(_Light_2_Pos, IN.location) + powerForPos(_Light_3_Pos, IN.location) + areaTransparancy(_Transparent, IN.location)));
 
 		o.Albedo = lerp(baseColour.rgb, dot(baseColour.rgb, float3(_ColourR, _ColourG, _ColourB)), _EffectAmount);
 		o.Alpha = alpha;
@@ -83,6 +88,12 @@ Shader "Darkness" {
 	{
 		float atten = clamp(_ColourRadius - length(pos.xy - nearVertex.xy), 0.0, _ColourRadius);
 		return (1.0 / _ColourMaxRadius)*atten / _ColourRadius;
+	}
+
+	float playerPos(float4 pos, float2 nearVertex)
+	{
+		float atten = clamp(_PColourRadius - length(pos.xy - nearVertex.xy), 0.0, _PColourRadius);
+		return (1.0 / _PColourMaxRadius)*atten / _PColourRadius;
 	}
 
 	float areaTransparancy(float4 pos, float2 nearVertex)

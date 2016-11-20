@@ -72,48 +72,6 @@ public class CharacterController : MovingCharacter {
 
     }
 
-    //check to see if there is a collision object immediately under the character
-    //return true if the character is standing on a collision object
-    protected bool CheckIsGrounded(float offsetX)
-    {
-        Vector3 origin = transform.position;
-        origin.x += offsetX;
-        //create a downwards-facing raycast at the character's feet
-        RaycastHit2D hitInfo = Physics2D.Raycast(origin, new Vector2(0, -1), raycastDistance);
-
-        //draws a line on screen to visually see what the raycast is doing
-        Debug.DrawRay(origin, new Vector2(0, -raycastDistance));
-
-
-        if (hitInfo.collider == null)
-        {
-            transform.SetParent(null);
-            anim.SetBool("isGrounded", false);
-            return false;
-        }
-
-        //set transform parent to the moving platform if colliding with one
-        if ((hitInfo.collider.gameObject.GetComponent<MovingPlatform>() != null))
-        {
-            //change the parent of this unit to the moving platform it is on
-            transform.SetParent(hitInfo.collider.transform);
-            anim.SetBool("isGrounded", true);
-            return true;
-        }
-
-        else if((hitInfo.collider.gameObject.GetComponent<Stairs>() != null))
-        {
-            anim.SetBool("isGrounded", true);
-        }
-        else
-        {
-            transform.SetParent(null);
-        }
-
-        anim.SetBool("isGrounded", true);
-        return true;
-    }
-
 
 
     void OnTriggerEnter2D(Collider2D myCollider)

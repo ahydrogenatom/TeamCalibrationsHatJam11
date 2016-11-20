@@ -1543,11 +1543,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000010330966596, guid: 273762fdf2dea394f9bb5e1717279f61, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -70.1
+      value: -1.98
       objectReference: {fileID: 0}
     - target: {fileID: 4000010330966596, guid: 273762fdf2dea394f9bb5e1717279f61, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -12.9
+      value: -17.75
       objectReference: {fileID: 0}
     - target: {fileID: 4000010330966596, guid: 273762fdf2dea394f9bb5e1717279f61, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1650,11 +1650,6 @@ Prefab:
       propertyPath: sanityGrowthThreshold
       value: 0.35
       objectReference: {fileID: 0}
-    - target: {fileID: 114000010877352486, guid: 273762fdf2dea394f9bb5e1717279f61,
-        type: 2}
-      propertyPath: scaryFace
-      value: 
-      objectReference: {fileID: 790561235}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 273762fdf2dea394f9bb5e1717279f61, type: 2}
   m_IsPrefabParent: 0
@@ -4078,12 +4073,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4000013311009782, guid: 7b601c2e85dda3549b2353e330d03294,
     type: 2}
   m_PrefabInternal: {fileID: 1554804390}
---- !u!114 &790561235 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114000012563059042, guid: 7b601c2e85dda3549b2353e330d03294,
-    type: 2}
-  m_PrefabInternal: {fileID: 1554804390}
-  m_Script: {fileID: 11500000, guid: 84f998d88ef59ad4699cf92ab99d1d90, type: 3}
 --- !u!1 &801741976
 GameObject:
   m_ObjectHideFlags: 0
@@ -7693,6 +7682,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013311009782, guid: 7b601c2e85dda3549b2353e330d03294, type: 2}
       propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011379220560, guid: 7b601c2e85dda3549b2353e330d03294, type: 2}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

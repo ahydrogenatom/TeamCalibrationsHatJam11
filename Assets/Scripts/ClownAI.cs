@@ -18,7 +18,7 @@ public class ClownAI : MovingCharacter {
 
     private double movementSwitchtimer;
 
-    private double lightTimer = 10;
+    private double lightTimer = 5;
     private double currenttimer;
     private double lastTimer;
 
@@ -55,7 +55,7 @@ public class ClownAI : MovingCharacter {
             if(greenLight == true)
             {
                 greenLight = false;
-                lightTimer *= 1.2;
+                lightTimer *= GetRandom();
             }
             else
             {

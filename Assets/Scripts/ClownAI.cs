@@ -32,12 +32,12 @@ public class ClownAI : MovingCharacter {
 
         if (greenLight == true)
         {
-            anim.SetBool("GreenLight", true);
+            anim.SetBool("GreenLight", greenLight);
             Move(idle);
         }
         if (greenLight == false)
         {
-            anim.SetBool("GreenLight", false);
+            anim.SetBool("GreenLight", greenLight);
             Move(direction);
             currentWalkTime = Time.time - lastWalkTime;
             if (currentWalkTime > walkTimer)
@@ -60,13 +60,13 @@ public class ClownAI : MovingCharacter {
             if(greenLight == true)
             {
                 greenLight = false;
-                lightTimer *= GetRandom();
+                walkTimer *= GetRandom();
                 
             }
             else
             {
                 greenLight = true;
-                lightTimer = 10;
+                walkTimer = 10;
             }
 
             lastTimer = Time.time;
@@ -79,8 +79,9 @@ public class ClownAI : MovingCharacter {
         {
             if(CharacterController.lightOn == true && CharacterController.isCaught == false)
             {
+                CharacterController.isCaught = true;
                 scaryFace.setVisible(true);
-               scaryFace.eatScreen();
+                scaryFace.eatScreen();
             }
         }
     }

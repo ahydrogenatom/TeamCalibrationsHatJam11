@@ -1,0 +1,787 @@
+fileFormatVersion: 2
+guid: be22a3e01e9e0954f8d886dc2de7f311
+timeCreated: 1479611857
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: AssetSheet2_0
+    21300002: AssetSheet2_1
+    21300004: AssetSheet2_2
+    21300006: AssetSheet2_3
+    21300008: AssetSheet2_4
+    21300010: AssetSheet2_5
+    21300012: AssetSheet2_6
+    21300014: AssetSheet2_7
+    21300016: AssetSheet2_8
+    21300018: AssetSheet2_9
+    21300020: AssetSheet2_10
+    21300022: AssetSheet2_11
+    21300024: AssetSheet2_12
+    21300026: AssetSheet2_13
+    21300028: AssetSheet2_14
+    21300030: AssetSheet2_15
+    21300032: AssetSheet2_16
+    21300034: AssetSheet2_17
+    21300036: AssetSheet2_18
+    21300038: AssetSheet2_19
+    21300040: AssetSheet2_20
+    21300042: AssetSheet2_21
+    21300044: AssetSheet2_22
+    21300046: AssetSheet2_23
+    21300048: AssetSheet2_24
+    21300050: AssetSheet2_25
+    21300052: AssetSheet2_26
+    21300054: AssetSheet2_27
+    21300056: AssetSheet2_28
+    21300058: AssetSheet2_29
+    21300060: AssetSheet2_30
+    21300062: AssetSheet2_31
+    21300064: AssetSheet2_32
+    21300066: AssetSheet2_33
+    21300068: AssetSheet2_34
+    21300070: AssetSheet2_35
+    21300072: AssetSheet2_36
+    21300074: AssetSheet2_37
+    21300076: AssetSheet2_38
+    21300078: AssetSheet2_39
+    21300080: AssetSheet2_40
+    21300082: AssetSheet2_41
+    21300084: AssetSheet2_42
+    21300086: AssetSheet2_43
+    21300088: AssetSheet2_44
+    21300090: AssetSheet2_45
+    21300092: AssetSheet2_46
+    21300094: AssetSheet2_47
+    21300096: AssetSheet2_48
+    21300098: AssetSheet2_49
+    21300100: AssetSheet2_50
+    21300102: AssetSheet2_51
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 244, y: 3843, z: 3566, w: 119}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AssetSheet2_0
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 3791
+        width: 1612
+        height: 983
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_1
+      rect:
+        serializedVersion: 2
+        x: 2473
+        y: 4656
+        width: 830
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_2
+      rect:
+        serializedVersion: 2
+        x: 3364
+        y: 3927
+        width: 653
+        height: 734
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_3
+      rect:
+        serializedVersion: 2
+        x: 4128
+        y: 3897
+        width: 434
+        height: 835
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_4
+      rect:
+        serializedVersion: 2
+        x: 4693
+        y: 3893
+        width: 381
+        height: 864
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_5
+      rect:
+        serializedVersion: 2
+        x: 2473
+        y: 4532
+        width: 830
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_6
+      rect:
+        serializedVersion: 2
+        x: 2473
+        y: 4416
+        width: 830
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_7
+      rect:
+        serializedVersion: 2
+        x: 2473
+        y: 4298
+        width: 830
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_8
+      rect:
+        serializedVersion: 2
+        x: 2473
+        y: 4187
+        width: 830
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_9
+      rect:
+        serializedVersion: 2
+        x: 2473
+        y: 4066
+        width: 830
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_10
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 3026
+        width: 267
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_11
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 3339
+        width: 181
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_12
+      rect:
+        serializedVersion: 2
+        x: 2108
+        y: 3319
+        width: 625
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_13
+      rect:
+        serializedVersion: 2
+        x: 2842
+        y: 3208
+        width: 295
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_14
+      rect:
+        serializedVersion: 2
+        x: 3467
+        y: 2993
+        width: 331
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_15
+      rect:
+        serializedVersion: 2
+        x: 3926
+        y: 3200
+        width: 331
+        height: 394
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_16
+      rect:
+        serializedVersion: 2
+        x: 4330
+        y: 2993
+        width: 330
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_17
+      rect:
+        serializedVersion: 2
+        x: 4744
+        y: 2993
+        width: 332
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_18
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 2451
+        width: 765
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_19
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 2504
+        width: 328
+        height: 668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_20
+      rect:
+        serializedVersion: 2
+        x: 1714
+        y: 2509
+        width: 328
+        height: 668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_21
+      rect:
+        serializedVersion: 2
+        x: 2087
+        y: 2509
+        width: 328
+        height: 668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_22
+      rect:
+        serializedVersion: 2
+        x: 2453
+        y: 2509
+        width: 328
+        height: 668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_23
+      rect:
+        serializedVersion: 2
+        x: 2814
+        y: 2509
+        width: 330
+        height: 668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_24
+      rect:
+        serializedVersion: 2
+        x: 3442
+        y: 2279
+        width: 386
+        height: 608
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_25
+      rect:
+        serializedVersion: 2
+        x: 3891
+        y: 2279
+        width: 383
+        height: 608
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_26
+      rect:
+        serializedVersion: 2
+        x: 4302
+        y: 2279
+        width: 383
+        height: 608
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_27
+      rect:
+        serializedVersion: 2
+        x: 4712
+        y: 2279
+        width: 385
+        height: 608
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_28
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 1936
+        width: 765
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_29
+      rect:
+        serializedVersion: 2
+        x: 1366
+        y: 1755
+        width: 661
+        height: 365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_30
+      rect:
+        serializedVersion: 2
+        x: 2385
+        y: 1669
+        width: 699
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_31
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 1740
+        width: 305
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_32
+      rect:
+        serializedVersion: 2
+        x: 3611
+        y: 1737
+        width: 305
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_33
+      rect:
+        serializedVersion: 2
+        x: 4004
+        y: 1740
+        width: 306
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_34
+      rect:
+        serializedVersion: 2
+        x: 4385
+        y: 1737
+        width: 305
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_35
+      rect:
+        serializedVersion: 2
+        x: 4766
+        y: 1740
+        width: 305
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_36
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 1454
+        width: 767
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_37
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 715
+        width: 497
+        height: 838
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_38
+      rect:
+        serializedVersion: 2
+        x: 2201
+        y: 1137
+        width: 895
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_39
+      rect:
+        serializedVersion: 2
+        x: 3245
+        y: 1190
+        width: 840
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_40
+      rect:
+        serializedVersion: 2
+        x: 4151
+        y: 1190
+        width: 840
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_41
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 599
+        width: 562
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_42
+      rect:
+        serializedVersion: 2
+        x: 2201
+        y: 662
+        width: 895
+        height: 429
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_43
+      rect:
+        serializedVersion: 2
+        x: 3260
+        y: 670
+        width: 840
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_44
+      rect:
+        serializedVersion: 2
+        x: 4166
+        y: 670
+        width: 840
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_45
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 112
+        width: 277
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_46
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 189
+        width: 226
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_47
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 226
+        width: 161
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_48
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 163
+        width: 237
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_49
+      rect:
+        serializedVersion: 2
+        x: 1954
+        y: 39
+        width: 1019
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_50
+      rect:
+        serializedVersion: 2
+        x: 3043
+        y: 48
+        width: 1019
+        height: 481
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_51
+      rect:
+        serializedVersion: 2
+        x: 4118
+        y: 48
+        width: 1019
+        height: 481
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

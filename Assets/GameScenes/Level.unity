@@ -6064,7 +6064,7 @@ Prefab:
     - target: {fileID: 212000010299774978, guid: 40187e33683a484409192e1342f53730,
         type: 2}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1000010090606198, guid: 40187e33683a484409192e1342f53730, type: 2}
       propertyPath: m_IsActive

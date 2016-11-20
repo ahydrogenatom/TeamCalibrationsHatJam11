@@ -23,29 +23,10 @@ GameObject:
   - 50: {fileID: 50000013043416620}
   - 61: {fileID: 61000013201223440}
   - 114: {fileID: 114000010877352486}
-  - 95: {fileID: 95000013746119432}
+  - 95: {fileID: 95000012313628982}
   m_Layer: 2
   m_Name: Brooklyn
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1000013987893802
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 4000011952154142}
-  - 20: {fileID: 20000010984082104}
-  - 92: {fileID: 92000010111576442}
-  - 124: {fileID: 124000010584103822}
-  - 81: {fileID: 81000011606202986}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57,60 +38,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011690878362}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -84.08, y: -31.29, z: 0}
+  m_LocalPosition: {x: -3.16, y: -3.3, z: 0}
   m_LocalScale: {x: 0.72561795, y: 0.72561795, z: 0.72561795}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children:
-  - {fileID: 4000011952154142}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!4 &4000011952154142
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013987893802}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 1.5, z: -13.781358}
-  m_LocalScale: {x: 0.9992278, y: 1.3781357, z: 1.3781357}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 4000010330966596}
-  m_RootOrder: 0
---- !u!20 &20000010984082104
-Camera:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013987893802}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 1
-  orthographic size: 8
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
-  m_StereoMirrorMode: 0
 --- !u!50 &50000013043416620
 Rigidbody2D:
   serializedVersion: 2
@@ -139,24 +72,10 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 71db8ef04d3980f4884d0e4e087fb85b, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0.016381344, y: 0.9051797}
+  m_Offset: {x: 0.0087637035, y: 0.90518165}
   serializedVersion: 2
-  m_Size: {x: 1.0644549, y: 1.8145176}
---- !u!81 &81000011606202986
-AudioListener:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013987893802}
-  m_Enabled: 1
---- !u!92 &92000010111576442
-Behaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013987893802}
-  m_Enabled: 1
---- !u!95 &95000013746119432
+  m_Size: {x: 1.275, y: 1.8145175}
+--- !u!95 &95000012313628982
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
@@ -187,19 +106,6 @@ MonoBehaviour:
   moveSpeed: 4
   lightRange: 10
   jumpHeight: 15
-  bounceModifier: 2.2
-  maxSanity: 100
-  sanityDecayAmount: 1
-  sanityGrowthAmount: 2
-  sanityDecayThreshold: 0.4
-  sanityGrowthThreshold: 0.25
---- !u!124 &124000010584103822
-Behaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013987893802}
-  m_Enabled: 1
 --- !u!212 &212000010926972720
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -228,7 +134,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 92c8b1ed863db874cbe660cd44a8e59c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

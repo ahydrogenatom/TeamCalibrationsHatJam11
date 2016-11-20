@@ -685,6 +685,11 @@ Prefab:
       propertyPath: m_Name
       value: Clown (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012096196784, guid: c7cc5162ec35d324790b6543f2a5892d,
+        type: 2}
+      propertyPath: scaryFace
+      value: 
+      objectReference: {fileID: 966904185}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c7cc5162ec35d324790b6543f2a5892d, type: 2}
   m_IsPrefabParent: 0
@@ -1263,6 +1268,11 @@ Prefab:
       propertyPath: m_Name
       value: Clown (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012096196784, guid: c7cc5162ec35d324790b6543f2a5892d,
+        type: 2}
+      propertyPath: scaryFace
+      value: 
+      objectReference: {fileID: 966904185}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c7cc5162ec35d324790b6543f2a5892d, type: 2}
   m_IsPrefabParent: 0
@@ -5991,6 +6001,11 @@ Prefab:
       propertyPath: m_Name
       value: Clown (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012096196784, guid: c7cc5162ec35d324790b6543f2a5892d,
+        type: 2}
+      propertyPath: scaryFace
+      value: 
+      objectReference: {fileID: 966904185}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c7cc5162ec35d324790b6543f2a5892d, type: 2}
   m_IsPrefabParent: 0
@@ -6940,6 +6955,11 @@ Prefab:
       propertyPath: m_Name
       value: Clown (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012096196784, guid: c7cc5162ec35d324790b6543f2a5892d,
+        type: 2}
+      propertyPath: scaryFace
+      value: 
+      objectReference: {fileID: 966904185}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c7cc5162ec35d324790b6543f2a5892d, type: 2}
   m_IsPrefabParent: 0
@@ -8271,6 +8291,11 @@ Prefab:
       propertyPath: m_Name
       value: Clown (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012096196784, guid: c7cc5162ec35d324790b6543f2a5892d,
+        type: 2}
+      propertyPath: scaryFace
+      value: 
+      objectReference: {fileID: 966904185}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c7cc5162ec35d324790b6543f2a5892d, type: 2}
   m_IsPrefabParent: 0
@@ -11449,6 +11474,11 @@ Prefab:
       propertyPath: m_Name
       value: Clown (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012096196784, guid: c7cc5162ec35d324790b6543f2a5892d,
+        type: 2}
+      propertyPath: scaryFace
+      value: 
+      objectReference: {fileID: 966904185}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c7cc5162ec35d324790b6543f2a5892d, type: 2}
   m_IsPrefabParent: 0
@@ -11572,6 +11602,11 @@ Prefab:
       propertyPath: m_Name
       value: Clown (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012096196784, guid: c7cc5162ec35d324790b6543f2a5892d,
+        type: 2}
+      propertyPath: scaryFace
+      value: 
+      objectReference: {fileID: 966904185}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c7cc5162ec35d324790b6543f2a5892d, type: 2}
   m_IsPrefabParent: 0

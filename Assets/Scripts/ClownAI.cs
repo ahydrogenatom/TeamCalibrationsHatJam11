@@ -7,7 +7,7 @@ public class ClownAI : MovingCharacter {
 
     public double walkTimer;
 
-
+    protected float maxRayDistance = 1000;
 
     private double currentWalkTime;
 
@@ -21,6 +21,7 @@ public class ClownAI : MovingCharacter {
     private double lightTimer = 5;
     private double currenttimer;
     private double lastTimer;
+
 
 	// Update is called once per frame
 	void Update () {
@@ -65,5 +66,47 @@ public class ClownAI : MovingCharacter {
 
             lastTimer = Time.time;
         }
+    }
+
+    void OnTriggerEnter2D(Collider2D objectColided)
+    {
+        if(greenLight == false && objectColided.gameObject.GetComponent<CharacterController>() != null)
+        {
+            if(CharacterController.lightOn == true)
+            {
+                caughtPlayer();
+            }
+        }
+    }
+
+    void caughtPlayer()
+    {
+        CharacterController.isCaught = true;
+        Vector3 origin = transform.position;
+        RaycastHit2D hitInfo = Physics2D.Raycast(origin, new Vector2(90, -2), maxRayDistance);
+        Debug.DrawRay(origin, new Vector2(90, -2));
+        if(hitInfo.collider.gameObject.GetComponent<CharacterController>() == null)
+        {
+            Move(direction * -1);
+            caughtPlayer();
+        }
+        else
+        {
+            while (hitInfo.distance > 5)
+            {
+                hitInfo = Physics2D.Raycast(origin, new Vector2(90, -2), maxRayDistance);
+                Move(moveSpeed);
+            }
+            Move(0);
+            //play grab animation
+            //   while (AnimationState.time >= AnimationState.length)
+            //   {
+            //       yield return null;
+            //   }
+
+            //ScaryFaceController.setVisable();
+            //ScaryFaceController.eatScreen();
+        }
+
     }
 }

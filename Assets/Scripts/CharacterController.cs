@@ -4,7 +4,7 @@ using System.Collections;
 public class CharacterController : MovingCharacter {
 
 
-    private bool isCaught;
+    public static bool isCaught;
     [HideInInspector]
     public static bool lightOn = true;
     public int jumpHeight;
@@ -217,8 +217,5 @@ public class CharacterController : MovingCharacter {
     }
 
 
-    public void updateSanity()
-    {
 
-    }
 }

@@ -3,7 +3,7 @@ using System.Collections;
 
 public class CharacterLight : BaseLight {
         public float smoothTime = 0f;
-    // Use this for initialization
+   
 
     private Vector2 velocity = Vector2.zero;
     private float minLight = 1;
@@ -38,7 +38,7 @@ public class CharacterLight : BaseLight {
             {
                 tParam += Time.deltaTime * fadeTime;
                 var lerpedValue = Mathf.Lerp(maxLight, minLight, tParam);
-                darknessplane.GetComponent<Renderer>().material.SetFloat("_ColourMaxRadius", lerpedValue);
+                darknessplane.GetComponent<Renderer>().material.SetFloat("_PColourMaxRadius", lerpedValue);
             }
             tParam = 0;
         }

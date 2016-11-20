@@ -18,7 +18,7 @@ public class ScaryFaceController : MonoBehaviour {
 
         zPos = 10;
 
-        setVisible(false);
+        setVisible(true);
 	
 	}
 	

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: be22a3e01e9e0954f8d886dc2de7f311
-timeCreated: 1479611857
+timeCreated: 1479666546
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -56,6 +56,7 @@ TextureImporter:
     21300098: AssetSheet2_49
     21300100: AssetSheet2_50
     21300102: AssetSheet2_51
+    21300104: AssetSheet2_52
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -251,6 +252,19 @@ TextureImporter:
       name: AssetSheet2_11
       rect:
         serializedVersion: 2
+        x: 1409
+        y: 3335
+        width: 94
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AssetSheet2_12
+      rect:
+        serializedVersion: 2
         x: 1785
         y: 3339
         width: 181
@@ -261,7 +275,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_12
+      name: AssetSheet2_13
       rect:
         serializedVersion: 2
         x: 2108
@@ -274,7 +288,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_13
+      name: AssetSheet2_14
       rect:
         serializedVersion: 2
         x: 2842
@@ -287,7 +301,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_14
+      name: AssetSheet2_15
       rect:
         serializedVersion: 2
         x: 3467
@@ -300,7 +314,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_15
+      name: AssetSheet2_16
       rect:
         serializedVersion: 2
         x: 3926
@@ -313,7 +327,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_16
+      name: AssetSheet2_17
       rect:
         serializedVersion: 2
         x: 4330
@@ -326,7 +340,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_17
+      name: AssetSheet2_18
       rect:
         serializedVersion: 2
         x: 4744
@@ -339,7 +353,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_18
+      name: AssetSheet2_19
       rect:
         serializedVersion: 2
         x: 185
@@ -352,7 +366,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_19
+      name: AssetSheet2_20
       rect:
         serializedVersion: 2
         x: 1341
@@ -365,7 +379,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_20
+      name: AssetSheet2_21
       rect:
         serializedVersion: 2
         x: 1714
@@ -378,7 +392,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_21
+      name: AssetSheet2_22
       rect:
         serializedVersion: 2
         x: 2087
@@ -391,7 +405,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_22
+      name: AssetSheet2_23
       rect:
         serializedVersion: 2
         x: 2453
@@ -404,7 +418,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_23
+      name: AssetSheet2_24
       rect:
         serializedVersion: 2
         x: 2814
@@ -417,7 +431,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_24
+      name: AssetSheet2_25
       rect:
         serializedVersion: 2
         x: 3442
@@ -430,7 +444,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_25
+      name: AssetSheet2_26
       rect:
         serializedVersion: 2
         x: 3891
@@ -443,7 +457,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_26
+      name: AssetSheet2_27
       rect:
         serializedVersion: 2
         x: 4302
@@ -456,7 +470,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_27
+      name: AssetSheet2_28
       rect:
         serializedVersion: 2
         x: 4712
@@ -469,7 +483,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_28
+      name: AssetSheet2_29
       rect:
         serializedVersion: 2
         x: 185
@@ -482,7 +496,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_29
+      name: AssetSheet2_30
       rect:
         serializedVersion: 2
         x: 1366
@@ -495,7 +509,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_30
+      name: AssetSheet2_31
       rect:
         serializedVersion: 2
         x: 2385
@@ -508,7 +522,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_31
+      name: AssetSheet2_32
       rect:
         serializedVersion: 2
         x: 3240
@@ -521,7 +535,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_32
+      name: AssetSheet2_33
       rect:
         serializedVersion: 2
         x: 3611
@@ -534,7 +548,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_33
+      name: AssetSheet2_34
       rect:
         serializedVersion: 2
         x: 4004
@@ -547,7 +561,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_34
+      name: AssetSheet2_35
       rect:
         serializedVersion: 2
         x: 4385
@@ -560,7 +574,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_35
+      name: AssetSheet2_36
       rect:
         serializedVersion: 2
         x: 4766
@@ -573,7 +587,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_36
+      name: AssetSheet2_37
       rect:
         serializedVersion: 2
         x: 193
@@ -586,7 +600,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_37
+      name: AssetSheet2_38
       rect:
         serializedVersion: 2
         x: 1338
@@ -599,7 +613,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_38
+      name: AssetSheet2_39
       rect:
         serializedVersion: 2
         x: 2201
@@ -612,7 +626,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_39
+      name: AssetSheet2_40
       rect:
         serializedVersion: 2
         x: 3245
@@ -625,7 +639,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_40
+      name: AssetSheet2_41
       rect:
         serializedVersion: 2
         x: 4151
@@ -638,7 +652,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_41
+      name: AssetSheet2_42
       rect:
         serializedVersion: 2
         x: 433
@@ -651,7 +665,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_42
+      name: AssetSheet2_43
       rect:
         serializedVersion: 2
         x: 2201
@@ -664,7 +678,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_43
+      name: AssetSheet2_44
       rect:
         serializedVersion: 2
         x: 3260
@@ -677,7 +691,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_44
+      name: AssetSheet2_45
       rect:
         serializedVersion: 2
         x: 4166
@@ -690,7 +704,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_45
+      name: AssetSheet2_46
       rect:
         serializedVersion: 2
         x: 130
@@ -703,7 +717,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_46
+      name: AssetSheet2_47
       rect:
         serializedVersion: 2
         x: 466
@@ -716,7 +730,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_47
+      name: AssetSheet2_48
       rect:
         serializedVersion: 2
         x: 811
@@ -729,7 +743,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_48
+      name: AssetSheet2_49
       rect:
         serializedVersion: 2
         x: 1139
@@ -742,7 +756,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_49
+      name: AssetSheet2_50
       rect:
         serializedVersion: 2
         x: 1954
@@ -755,7 +769,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_50
+      name: AssetSheet2_51
       rect:
         serializedVersion: 2
         x: 3043
@@ -768,7 +782,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AssetSheet2_51
+      name: AssetSheet2_52
       rect:
         serializedVersion: 2
         x: 4118

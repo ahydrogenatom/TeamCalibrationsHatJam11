@@ -41,7 +41,7 @@ public class ScaryFaceController : MonoBehaviour {
             SceneManager.LoadScene("Level");
         }
 
-        print(zPos);
+        
 
     }
 

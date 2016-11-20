@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ClownAI : MovingCharacter {
 
-    private bool greenLight = true;
+    public static bool greenLight = true;
 
     public double walkTimer;
 
@@ -13,7 +13,7 @@ public class ClownAI : MovingCharacter {
 
     private double lastWalkTime;
 
-    private float direction = 1;
+    public float direction = 1;
     private float idle = 0;
 
     
@@ -25,6 +25,7 @@ public class ClownAI : MovingCharacter {
     private double lastTimer;
 
     public ScaryFaceController scaryFace;
+    public FOVConeController visionCone;
 
 	// Update is called once per frame
 	void Update () {

@@ -113,6 +113,8 @@ MonoBehaviour:
   walkTimer: 5
   scaryFace: {fileID: 114000012563059042, guid: 7b601c2e85dda3549b2353e330d03294,
     type: 2}
+  visionCone: {fileID: 114000010346455412, guid: 29d9049f334427046999c1614288b731,
+    type: 2}
 --- !u!212 &212000012914831558
 SpriteRenderer:
   m_ObjectHideFlags: 1

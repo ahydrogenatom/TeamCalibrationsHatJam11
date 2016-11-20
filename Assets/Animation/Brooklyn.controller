@@ -25,9 +25,7 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-<<<<<<< HEAD
     m_Controller: {fileID: 9100000}
-=======
     m_Controller: {fileID: 0}
   - m_Name: isGrounded
     m_Type: 4
@@ -35,7 +33,6 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
->>>>>>> 00670b5928142b109d64947d84798a6520a8c057
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer

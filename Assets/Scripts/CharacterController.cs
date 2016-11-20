@@ -201,6 +201,9 @@ public class CharacterController : MovingCharacter {
         }
     }
 
-
+    public void winGame()
+    {
+        anim.SetBool("Victory", true);
+    }
 
 }

@@ -81,13 +81,13 @@ Material:
       second: 0.58
     - first:
         name: _ColourMaxRadius
-      second: 0.95
+      second: 0.49
     - first:
         name: _ColourR
       second: 1.1
     - first:
         name: _ColourRadius
-      second: 2.19
+      second: 4.78
     - first:
         name: _Cutoff
       second: 0.5
@@ -111,7 +111,7 @@ Material:
       second: 1
     - first:
         name: _MaxTransparancy
-      second: 129.8
+      second: 1747.16
     - first:
         name: _Metallic
       second: 0
@@ -123,7 +123,13 @@ Material:
       second: 1
     - first:
         name: _OverallTransparancy
-      second: 4.3
+      second: 13
+    - first:
+        name: _PColourMaxRadius
+      second: 1
+    - first:
+        name: _PColourRadius
+      second: 11
     - first:
         name: _Parallax
       second: 0.02
@@ -154,13 +160,13 @@ Material:
       second: {r: 0, g: 0, b: 0, a: 1}
     - first:
         name: _Light_1_Pos
-      second: {r: 0, g: 0, b: 0, a: 1}
+      second: {r: -60.78, g: -29.6, b: 0, a: 1}
     - first:
         name: _Light_2_Pos
-      second: {r: 500, g: 0, b: 0, a: 1}
+      second: {r: -63.3, g: -43.2, b: 0, a: 1}
     - first:
         name: _Light_3_Pos
-      second: {r: 500, g: 0, b: 0, a: 1}
+      second: {r: -25.4, g: -43.2, b: 0, a: 1}
     - first:
         name: _PlayerPos
       second: {r: 0, g: 0, b: 0, a: 1}
@@ -169,4 +175,4 @@ Material:
       second: {r: 0, g: 0, b: 0, a: 1}
     - first:
         name: _Transparent
-      second: {r: -14.49, g: 0, b: 0, a: 1}
+      second: {r: -60.8, g: -21.27, b: 0, a: 1}

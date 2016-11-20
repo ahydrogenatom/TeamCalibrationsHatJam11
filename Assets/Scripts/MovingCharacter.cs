@@ -19,7 +19,7 @@ public class MovingCharacter : MonoBehaviour {
 
 
     protected float raycastDistance = 0.1f;
-    protected float raycastOffset = 0.4f;
+    protected float raycastOffset = 0.35f;
 
 
     protected bool isGrounded;
@@ -27,7 +27,6 @@ public class MovingCharacter : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-
         //assign the private RigidBody component
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();

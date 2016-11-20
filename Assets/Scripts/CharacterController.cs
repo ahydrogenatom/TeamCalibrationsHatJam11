@@ -192,8 +192,5 @@ public class CharacterController : MovingCharacter {
     }
 
 
-    public void updateSanity()
-    {
 
-    }
 }

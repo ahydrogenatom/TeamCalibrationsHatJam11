@@ -1,16 +1,18 @@
 fileFormatVersion: 2
-guid: 46c41a726fc5a9a4480a4b688203f3da
-timeCreated: 1479668347
+guid: 62221cbb832faf1439b76cf602e5baf0
+timeCreated: 1479670151
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: green sofa_0
-    21300002: green sofa_1
-    21300004: green sofa_2
-    21300006: green sofa_3
-    21300008: green sofa_4
-    21300010: green sofa_5
-    21300012: green sofa_6
+    21300000: Flames_8
+    21300002: Flames_13
+    21300004: Flames_17
+    21300006: Flames_20
+    21300008: Flames_21
+    21300010: Flames_23
+    21300012: Flames_24
+    21300014: Flames_26
+    21300016: Flames_27
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -60,93 +62,119 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: green sofa_0
+      name: Flames_8
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 0
+        width: 182
+        height: 763
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flames_13
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 763
-        height: 381
+        width: 182
+        height: 763
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: green sofa_1
+      name: Flames_17
       rect:
         serializedVersion: 2
-        x: 1016
+        x: 1124
         y: 0
-        width: 768
-        height: 381
+        width: 191
+        height: 763
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: green sofa_2
+      name: Flames_20
       rect:
         serializedVersion: 2
-        x: 1805
+        x: 2000
         y: 0
-        width: 768
-        height: 381
+        width: 183
+        height: 763
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: green sofa_3
+      name: Flames_21
       rect:
         serializedVersion: 2
-        x: 2857
-        y: 0
-        width: 765
-        height: 381
+        x: 588
+        y: 1
+        width: 182
+        height: 762
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: green sofa_4
+      name: Flames_23
       rect:
         serializedVersion: 2
-        x: 4230
+        x: 842
         y: 0
-        width: 764
-        height: 381
+        width: 178
+        height: 763
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: green sofa_5
+      name: Flames_24
       rect:
         serializedVersion: 2
-        x: 5104
+        x: 1394
         y: 0
-        width: 765
-        height: 381
+        width: 164
+        height: 763
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: green sofa_6
+      name: Flames_26
       rect:
         serializedVersion: 2
-        x: 6231
+        x: 1717
         y: 0
-        width: 763
-        height: 381
-      alignment: 9
-      pivot: {x: 0.505, y: 0.5}
+        width: 173
+        height: 763
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flames_27
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 149
+        width: 10
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0

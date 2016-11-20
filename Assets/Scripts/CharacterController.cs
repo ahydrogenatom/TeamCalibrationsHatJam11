@@ -66,82 +66,98 @@ public class CharacterController : MovingCharacter {
     void Update () {
 
 
-        //timing code for sanity decay and growth
-
-        //SANITY DECAY CODE
-        //decay sanity when light is off
-        if(lightOn == false)
+        //check if player is caught by the clowns
+        if (isCaught == false)
         {
-            currentDecayTime = Time.time - lastDecayTime;
 
-            //if it is time for sanity decay
-            if(currentDecayTime > sanityDecayThreshold)
+            //timing code for sanity decay and growth
+
+            //SANITY DECAY CODE
+            //decay sanity when light is off
+            if (lightOn == false)
             {
-                if(currentSanity > 0)
+                currentDecayTime = Time.time - lastDecayTime;
+
+                //if it is time for sanity decay
+                if (currentDecayTime > sanityDecayThreshold)
                 {
-                    currentSanity -= sanityDecayAmount;
+                    if (currentSanity > 0)
+                    {
+                        currentSanity -= sanityDecayAmount;
+                    }
+
+                    lastDecayTime = Time.time;
                 }
-                
-                lastDecayTime = Time.time;
             }
-        }
 
-        //SANITY GROWTH CODE
-        //increment sanity back up when the light is on
-        if(lightOn == true)
-        {
-            currentGrowthTime = Time.time - lastGrowthTime;
-
-            //if it is time for sanity growth
-            if(currentGrowthTime > sanityGrowthThreshold)
+            //SANITY GROWTH CODE
+            //increment sanity back up when the light is on
+            if (lightOn == true)
             {
-                //make sure sanity doesn't go above 100
-                if(currentSanity < 100)
+                currentGrowthTime = Time.time - lastGrowthTime;
+
+                //if it is time for sanity growth
+                if (currentGrowthTime > sanityGrowthThreshold)
                 {
-                    currentSanity += sanityGrowthAmount;
+                    //make sure sanity doesn't go above 100
+                    if (currentSanity < 100)
+                    {
+                        currentSanity += sanityGrowthAmount;
+                    }
+                    lastGrowthTime = Time.time;
                 }
-                lastGrowthTime = Time.time;
             }
-        }
 
-        //print(currentSanity);
+            //print(currentSanity);
 
-        //check to see if character is grounded
-        //able to jump if one of the raycasts on either side of character is on the ground
-        if (CheckIsGrounded(raycastOffset) || CheckIsGrounded(-raycastOffset))
-        {
-            isGrounded = true;
-        }
-        else isGrounded = false;
-
-        //move horizontally
-        float horizontalInput = Input.GetAxisRaw("Horizontal");
-
-
-        //on the ground
-        if (isGrounded == true)
-        {
-            Move(horizontalInput);
-
-            if (Input.GetKeyDown(KeyCode.Space))
+            //check to see if character is grounded
+            //able to jump if one of the raycasts on either side of character is on the ground
+            if (CheckIsGrounded(raycastOffset) || CheckIsGrounded(-raycastOffset))
             {
-                Jump();
+                isGrounded = true;
             }
-        }
-          //in the air
-        if (isGrounded == false)
-        {
+            else isGrounded = false;
 
-            float airMovement = (float)(horizontalInput * 0.8);
-            Move(airMovement);
-            
+            //move horizontally
+            float horizontalInput = Input.GetAxisRaw("Horizontal");
+
+
+            //on the ground
+            if (isGrounded == true)
+            {
+                Move(horizontalInput);
+
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    Jump();
+                }
+            }
+            //in the air
+            if (isGrounded == false)
+            {
+
+                float airMovement = (float)(horizontalInput * 0.8);
+                Move(airMovement);
+
+            }
+
         }
-        
+
+
+        //set caught behaviour
+        if(isCaught == true)
+        {
+            //play cry animation
+
+        //play loss screen
+        }
         anim.SetFloat("PlayerSpeed", Mathf.Abs(rb.velocity.x));
 		anim.SetFloat ("Vertical speed", rb.velocity.y);
-
-
+        
     }
+
+
+    
 
     //Jump method
     protected void Jump()
@@ -157,48 +173,7 @@ public class CharacterController : MovingCharacter {
 
     }
     
-    //check to see if there is a collision object immediately under the character
-    //return true if the character is standing on a collision object
-    protected bool CheckIsGrounded(float offsetX)
-    {
-        Vector3 origin = transform.position;
-        origin.x += offsetX;
-        //create a downwards-facing raycast at the character's feet
-        RaycastHit2D hitInfo = Physics2D.Raycast(origin, new Vector2(0, -1), raycastDistance);
-
-        //draws a line on screen to visually see what the raycast is doing
-        Debug.DrawRay(origin, new Vector2(0, -raycastDistance));
-
-
-        if (hitInfo.collider == null)
-        {
-            transform.SetParent(null);
-            anim.SetBool("isGrounded", false);
-            return false;
-        }
-
-        //set transform parent to the moving platform if colliding with one
-        if ((hitInfo.collider.gameObject.GetComponent<MovingPlatform>() != null))
-        {
-            //change the parent of this unit to the moving platform it is on
-            transform.SetParent(hitInfo.collider.transform);
-            anim.SetBool("isGrounded", true);
-            return true;
-        }
-
-        //make sure player is in a grounded state while on the stairs
-        else if((hitInfo.collider.gameObject.GetComponent<Stairs>() != null))
-        {
-            anim.SetBool("isGrounded", true);
-        }
-        else
-        {
-            transform.SetParent(null);
-        }
-
-        anim.SetBool("isGrounded", true);
-        return true;
-    }
+   
     
 
 

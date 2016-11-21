@@ -1,0 +1,283 @@
+fileFormatVersion: 2
+guid: 3970bfdc494344a47b0acef9a2d9ae35
+timeCreated: 1479684460
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: HangAnimated_0
+    21300002: HangAnimated_1
+    21300004: HangAnimated_2
+    21300006: HangAnimated_3
+    21300008: HangAnimated_4
+    21300010: HangAnimated_5
+    21300012: HangAnimated_6
+    21300014: HangAnimated_7
+    21300016: HangAnimated_8
+    21300018: HangAnimated_9
+    21300020: HangAnimated_10
+    21300022: HangAnimated_11
+    21300024: HangAnimated_12
+    21300026: HangAnimated_13
+    21300028: HangAnimated_14
+    21300030: HangAnimated_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HangAnimated_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 286
+        height: 695
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HangAnimated_1
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 0
+        width: 289
+        height: 695
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HangAnimated_2
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 19
+        width: 354
+        height: 676
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HangAnimated_3
+      rect:
+        serializedVersion: 2
+        x: 1661
+        y: 58
+        width: 447
+        height: 637
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HangAnimated_4
+      rect:
+        serializedVersion: 2
+        x: 2376
+        y: 172
+        width: 610
+        height: 523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HangAnimated_5
+      rect:
+        serializedVersion: 2
+        x: 3254
+        y: 58
+        width: 447
+        height: 637
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HangAnimated_6
+      rect:
+        serializedVersion: 2
+        x: 4028
+        y: 19
+        width: 355
+        height: 676
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HangAnimated_7
+      rect:
+        serializedVersion: 2
+        x: 4754
+        y: 0
+        width: 294
+        height: 695
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HangAnimated_8
+      rect:
+        serializedVersion: 2
+        x: 5476
+        y: 0
+        width: 292
+        height: 695
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HangAnimated_9
+      rect:
+        serializedVersion: 2
+        x: 6363
+        y: 0
+        width: 289
+        height: 695
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HangAnimated_10
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 19
+        width: 354
+        height: 676
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HangAnimated_11
+      rect:
+        serializedVersion: 2
+        x: 7689
+        y: 58
+        width: 446
+        height: 637
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HangAnimated_12
+      rect:
+        serializedVersion: 2
+        x: 8376
+        y: 172
+        width: 610
+        height: 523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HangAnimated_13
+      rect:
+        serializedVersion: 2
+        x: 9177
+        y: 58
+        width: 447
+        height: 637
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HangAnimated_14
+      rect:
+        serializedVersion: 2
+        x: 10012
+        y: 19
+        width: 354
+        height: 676
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HangAnimated_15
+      rect:
+        serializedVersion: 2
+        x: 10885
+        y: 0
+        width: 286
+        height: 695
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

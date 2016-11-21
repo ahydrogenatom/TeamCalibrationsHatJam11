@@ -7,6 +7,8 @@ public class CharacterController : MovingCharacter {
 
     public ScaryFaceController scaryFace;
 
+    public SoundManager sounds;
+
     public static bool isCaught;
     [HideInInspector]
     public static bool lightOn;
@@ -167,11 +169,28 @@ public class CharacterController : MovingCharacter {
 
         if(currentSanity <= 1)
         {
+            if(isCaught == false)
+            {
+                Instantiate(sounds.creepylaughNoise);
+            }
+            
             isCaught = true;
             scaryFace.setVisible(true);
+            
             scaryFace.eatScreen();
         }
-        
+
+
+        //check sound
+        Vector3 origin = transform.position;
+        origin.x += 0.35f;
+        //create a downwards-facing raycast at the character's feet
+        RaycastHit2D hitInfo = Physics2D.Raycast(origin, new Vector2(0, -1), raycastDistance, mask);
+
+        //draws a line on screen to visually see what the raycast is doing
+        Debug.DrawRay(origin, new Vector2(0, -raycastDistance));
+
+
     }
 
 
@@ -191,13 +210,96 @@ public class CharacterController : MovingCharacter {
 
     }
     
-   
-    
+   //play sounds on collision
+    void OnCollisionEnter2D(Collision2D coll)
+    {
+        string objectCollided = coll.gameObject.name;
+        print(objectCollided);
+
+        if(objectCollided.Contains("Chair"))
+        {
+            Instantiate(sounds.chairNoise);
+        }
+
+        if (objectCollided.Contains("Nightstand"))
+        {
+            Instantiate(sounds.dresserNoise);
+        }
+
+        if (objectCollided.Contains("Desk"))
+        {
+            Instantiate(sounds.tableNoise);
+        }
+
+        if (objectCollided.Contains("Sink"))
+        {
+            Instantiate(sounds.tableNoise);
+        }
+
+        if (objectCollided.Contains("Toilet"))
+        {
+            Instantiate(sounds.tableNoise);
+        }
+
+        if (objectCollided.Contains("Couch"))
+        {
+            Instantiate(sounds.bedNoise);
+        }
+
+        
+
+        if (objectCollided.Contains("Fireplace"))
+        {
+            Instantiate(sounds.breathingNoise);
+        }
+
+        if (objectCollided.Contains("Plant"))
+        {
+            Instantiate(sounds.leafNoise);
+        }
+
+        if (objectCollided.Contains("Oven"))
+        {
+            Instantiate(sounds.metalNoise);
+        }
+
+        if (objectCollided.Contains("Glass"))
+        {
+            Instantiate(sounds.glassBreakingNoise);
+        }
+
+        
+
+        if (objectCollided.Contains("Chandelier"))
+        {
+            Instantiate(sounds.swingNoise);
+        }
+
+        if (objectCollided.Contains("Table"))
+        {
+            Instantiate(sounds.tableNoise);
+        }
+
+        if (objectCollided.Contains("Shelf"))
+        {
+            Instantiate(sounds.tableNoise);
+        }
+
+        if (objectCollided.Contains("Dresser"))
+        {
+            Instantiate(sounds.dresserNoise);
+        }
+
+
+    }
 
 
     void OnTriggerEnter2D(Collider2D myCollider)
     {
-        //when hits spikes
+
+        string objectCollided = myCollider.gameObject.name;
+
+        //when hits bouncy objects
         if (myCollider.gameObject.GetComponent<BouncingObjectController>() != null)
         {
 
@@ -205,8 +307,36 @@ public class CharacterController : MovingCharacter {
             
             bounceJumpBack.y = (float)(-bounceJumpBack.y * 1.5);
 
+            Instantiate(sounds.bedNoise);
+
             rb.velocity = bounceJumpBack;
         }
+
+        if (objectCollided.Contains("Bed"))
+        {
+            Instantiate(sounds.bedNoise);
+        }
+
+        //when hits traps
+        if (objectCollided.Contains("Glass"))
+        {
+            Instantiate(sounds.glassBreakingNoise);
+            //Crying();
+        }
+
+        if (objectCollided.Contains("Water"))
+        {
+            Instantiate(sounds.slipNoise);
+            //Crying();
+        }
+
+        if (objectCollided.Contains("Plant"))
+        {
+            Instantiate(sounds.leafNoise);
+            //Crying();
+        }
+
+        //fire as well
     }
 
     public void winGame()

@@ -33,7 +33,7 @@ public class ScaryFaceController : MonoBehaviour {
             Vector3 newPos = new Vector3(transform.position.x, transform.position.y, zPos);
             transform.position = newPos;
 
-            zPos -= 0.1f;
+            zPos -= 0.3f;
         }
 
         if(zPos <= -15)

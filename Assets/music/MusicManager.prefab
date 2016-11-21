@@ -51,5 +51,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65b1ec97f38797648b05a85963683f14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light: {fileID: 0}
-  dark: {fileID: 0}
+  lightMusic: {fileID: 82000013330891618, guid: 8f487bcefdc277e4eb6f9f9f5dd7c17c,
+    type: 2}
+  darkMusic: {fileID: 82000011049092150, guid: a981eab53d4948d4c83a355d44e5304d, type: 2}

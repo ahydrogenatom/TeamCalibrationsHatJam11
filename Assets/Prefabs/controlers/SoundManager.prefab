@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1000013107174954}
+  m_IsPrefabParent: 1
+--- !u!1 &1000013107174954
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000012422422898}
+  - 114: {fileID: 114000010731522828}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4000012422422898
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013107174954}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -68.8587, y: -26.319357, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &114000010731522828
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013107174954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474dba6acb657cd4d8f539b7fb458746, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balloonNoise: {fileID: 1000013926846412, guid: ab64aff08f1e97d43a63be300907e6e0,
+    type: 2}
+  bedNoise: {fileID: 1000010978446434, guid: c21fd97c2f0ccab42ab3bdaa6a62d4ce, type: 2}
+  breathingNoise: {fileID: 1000012899094920, guid: 63ba300a0f39525458b7e418988eb0bf,
+    type: 2}
+  chairNoise: {fileID: 1000012324134022, guid: 66406d364a0c3de4da72345152a1b082, type: 2}
+  creepylaughNoise: {fileID: 1000013196520384, guid: 9ca15125d65e21c4e83e0cbc10853874,
+    type: 2}
+  demonGirlsNoise: {fileID: 1000012671825724, guid: 6e327643633c7ed489f33d6f8d9a3388,
+    type: 2}
+  leafNoise: {fileID: 1000011142422166, guid: fee0ee9b79a3a3e47aebc47c52ee50e4, type: 2}
+  metalNoise: {fileID: 1000013545290768, guid: 5541076966233d54b856d446a3a0f741, type: 2}
+  glassBreakingNoise: {fileID: 1000011163938158, guid: 6572a9e58cc3d6f4182053dc08f11dcf,
+    type: 2}
+  partyNoise: {fileID: 1000011144114940, guid: 6f9249076be36a2468633c619ed48975, type: 2}
+  slipNoise: {fileID: 1000012302744588, guid: d60f130e3ba655b46899fbd6d2e47f82, type: 2}
+  swingNoise: {fileID: 1000013863670684, guid: 06a10104f0ec38945bd7fa6128df9b49, type: 2}
+  womanCryingNoise: {fileID: 1000013549404898, guid: 347cbbff676aabe42bb45e9dd756caa3,
+    type: 2}
+  tableNoise: {fileID: 1000012126342702, guid: 06f56deee78e4304f9a5963a1028ffd5, type: 2}
+  dresserNoise: {fileID: 1000011058405886, guid: 699fa0cf667f8e04fa2280f658610c6c,
+    type: 2}

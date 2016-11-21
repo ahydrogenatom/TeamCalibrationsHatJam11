@@ -5,7 +5,7 @@ public class MovingCharacter : MonoBehaviour {
 
     public int moveSpeed;
     public int lightRange;
-
+    public GameObject clown;
     protected Random rand;
     public float randMin;
     public float randMax;
@@ -15,6 +15,10 @@ public class MovingCharacter : MonoBehaviour {
     protected SpriteRenderer sr;
     protected Animator anim;
     protected BoxCollider2D bc;
+    public double cryTime = 10;
+    private double lastTime;
+    public int sanityPenalty;
+    
 
 
 
@@ -53,6 +57,7 @@ public class MovingCharacter : MonoBehaviour {
         if (input < 0)
         {
             sr.flipX = true;
+
         }
         else if (input > 0)
         {
@@ -77,6 +82,7 @@ public class MovingCharacter : MonoBehaviour {
         //draws a line on screen to visually see what the raycast is doing
         Debug.DrawRay(origin, new Vector2(0, -raycastDistance));
 
+        
 
         if (hitInfo.collider == null)
         {
@@ -110,5 +116,22 @@ public class MovingCharacter : MonoBehaviour {
     protected float GetRandom()
    {
         return Random.Range(randMin, randMax);
+    }
+
+    protected void Crying()
+    {
+        anim.SetBool("Crying", true);
+        //Instantiate(Sounds.womanCryingNoise);
+        //double timer = 0;
+        // while (timer < cryTime)
+        // {
+        //    timer = Time.time - lastTime;
+        //}
+        // lastTime = Time.time;
+        Move(0);
+        anim.SetBool("Crying", false);
+        var sanity = CharacterController.getSanity();
+        CharacterController.setSanity(sanity - sanityPenalty);
+
     }
 }

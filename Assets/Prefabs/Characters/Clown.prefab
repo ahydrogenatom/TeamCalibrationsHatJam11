@@ -187,16 +187,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 1
   lightRange: 0
+  clown: {fileID: 0}
   randMin: 0.5
   randMax: 2
   mask:
     serializedVersion: 2
     m_Bits: 0
+  cryTime: 10
+  sanityPenalty: 0
   walkTimer: 5
   sounds: {fileID: 114000010731522828, guid: 9036a1815895e514ebf5518338f6fa04, type: 2}
   direction: 1
-  scaryFace: {fileID: 114000012563059042, guid: 7b601c2e85dda3549b2353e330d03294,
-    type: 2}
+  scaryFace: {fileID: 0}
   visionCone: {fileID: 114000010346455412, guid: 29d9049f334427046999c1614288b731,
     type: 2}
 --- !u!212 &212000010284123150

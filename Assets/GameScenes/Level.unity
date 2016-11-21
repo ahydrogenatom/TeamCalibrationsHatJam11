@@ -4319,6 +4319,7 @@ GameObject:
   - 4: {fileID: 864428795}
   - 212: {fileID: 864428794}
   - 61: {fileID: 864428793}
+  - 114: {fileID: 864428796}
   m_Layer: 0
   m_Name: AssetSheet2_21
   m_TagString: Untagged
@@ -4386,6 +4387,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 40
+--- !u!114 &864428796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 864428792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe571d06b669524484a83fd53fd2980, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  victoryTimer: 3
 --- !u!1001 &885416785
 Prefab:
   m_ObjectHideFlags: 0
@@ -6580,7 +6593,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1416344447}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.01, y: -4.84, z: 0}
+  m_LocalPosition: {x: 1.67, y: -13.25, z: 0}
   m_LocalScale: {x: 1.3531662, y: 1.3531665, z: 1.3531665}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -6930,7 +6943,7 @@ Prefab:
     - target: {fileID: 114000011629518410, guid: 84cced90cb770434e8a65879963d6e38,
         type: 2}
       propertyPath: fireLaunchThreshold
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 114000011629518410, guid: 84cced90cb770434e8a65879963d6e38,
         type: 2}
@@ -7408,6 +7421,7 @@ GameObject:
   - 4: {fileID: 1582497377}
   - 212: {fileID: 1582497376}
   - 95: {fileID: 1582497375}
+  - 114: {fileID: 1582497378}
   m_Layer: 0
   m_Name: Flames_8 (1)
   m_TagString: Untagged
@@ -7478,6 +7492,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 39
+--- !u!114 &1582497378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1582497374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6565d399114c7a4428f09a68917293a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightTime: 6
 --- !u!1 &1584625565
 GameObject:
   m_ObjectHideFlags: 0
@@ -7711,6 +7737,7 @@ GameObject:
   - 4: {fileID: 1644355165}
   - 212: {fileID: 1644355164}
   - 95: {fileID: 1644355163}
+  - 114: {fileID: 1644355166}
   m_Layer: 0
   m_Name: Flames_8
   m_TagString: Untagged
@@ -7781,6 +7808,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 38
+--- !u!114 &1644355166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1644355162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6565d399114c7a4428f09a68917293a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightTime: 6
 --- !u!1001 &1662771835
 Prefab:
   m_ObjectHideFlags: 0

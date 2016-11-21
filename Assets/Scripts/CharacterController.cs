@@ -321,19 +321,19 @@ public class CharacterController : MovingCharacter {
         if (objectCollided.Contains("Glass"))
         {
             Instantiate(sounds.glassBreakingNoise);
-            //Crying();
+            Crying();
         }
 
         if (objectCollided.Contains("Water"))
         {
             Instantiate(sounds.slipNoise);
-            //Crying();
+            Crying();
         }
 
         if (objectCollided.Contains("Plant"))
         {
             Instantiate(sounds.leafNoise);
-            //Crying();
+            Crying();
         }
 
         //fire as well

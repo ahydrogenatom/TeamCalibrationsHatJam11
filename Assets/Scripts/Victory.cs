@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Victory : MonoBehaviour {
 
     private bool winGame;
-    public double victoryTimer = 5;
+    public double victoryTimer = 3;
     private double currentTimer;
     private double lastTimer;
 
@@ -15,7 +16,7 @@ public class Victory : MonoBehaviour {
             currentTimer = Time.time - lastTimer;
             if (currentTimer > victoryTimer)
             {
-                //Change game sceen
+                SceneManager.LoadScene("Credits");
                 lastTimer = Time.time;
             }
         }

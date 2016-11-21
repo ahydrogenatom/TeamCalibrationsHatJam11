@@ -5,6 +5,8 @@ public class ClownAI : MovingCharacter {
 
     public double walkTimer;
 
+    public SoundManager sounds;
+
     protected float maxRayDistance = 1000;
 
     private double currentWalkTime;
@@ -79,6 +81,7 @@ public class ClownAI : MovingCharacter {
             if(CharacterController.lightOn == true && CharacterController.isCaught == false)
             {
                 CharacterController.isCaught = true;
+                Instantiate(sounds.creepylaughNoise);
                 scaryFace.setVisible(true);
                 scaryFace.eatScreen();
             }

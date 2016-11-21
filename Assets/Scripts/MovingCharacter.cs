@@ -77,6 +77,7 @@ public class MovingCharacter : MonoBehaviour {
         //draws a line on screen to visually see what the raycast is doing
         Debug.DrawRay(origin, new Vector2(0, -raycastDistance));
 
+        
 
         if (hitInfo.collider == null)
         {

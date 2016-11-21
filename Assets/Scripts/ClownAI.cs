@@ -39,6 +39,7 @@ public class ClownAI : MovingCharacter {
         }
         if (GreenLightManager.getLight() == false)
         {
+
             anim.SetBool("GreenLight", GreenLightManager.getLight());
             Move(direction);
             currentWalkTime = Time.time - lastWalkTime;
